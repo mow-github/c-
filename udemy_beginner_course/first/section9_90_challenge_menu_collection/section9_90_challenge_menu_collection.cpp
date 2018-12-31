@@ -68,7 +68,7 @@ void printVector(vector<int> const &input, bool useForLoopElseForRangeLoopFlag)
 {
 	if (useForLoopElseForRangeLoopFlag) {
 		cout << "[ ";
-		for (int i = 0; i < input.size(); i++) {
+		for (size_t i = 0; i < input.size(); i++) {
 			cout << input.at(i) << ' ';
 		}
 		cout << "]" << endl;
@@ -88,7 +88,7 @@ void printVectorMean(vector<int> const &input)
 {
 	int vectorSum{ 0 };
 	int mean{ 0 };
-		for (int i = 0; i < input.size(); i++) {
+		for (size_t i = 0; i < input.size(); i++) {
 			vectorSum += input.at(i);
 		}
 		mean = (vectorSum / input.size());
@@ -98,7 +98,7 @@ void printVectorMean(vector<int> const &input)
 void printVectorSmallest(vector<int> const &input)
 {
 	int vectorSmallest{ 0 };
-	for (int i = 0; i < input.size(); i++) {
+	for (size_t i = 0; i < input.size(); i++) {
 		if (input.at(i) < vectorSmallest) {
 			vectorSmallest = input.at(i);
 		}
@@ -109,7 +109,7 @@ void printVectorSmallest(vector<int> const &input)
 void printVectorLargest(vector<int> const &input)
 {
 	int vectorLargest{ 0 };
-	for (int i = 0; i < input.size(); i++) {
+	for (size_t i = 0; i < input.size(); i++) {
 		if (input.at(i) > vectorLargest) {
 			vectorLargest = input.at(i);
 		}
