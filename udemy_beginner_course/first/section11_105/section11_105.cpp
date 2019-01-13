@@ -33,6 +33,9 @@ using std::set;
 void pass_by_value(int num);
 void pass_by_ref(int &num);
 
+void print_array(int num_array[]);
+void set_array_values_tozero(int num_array[]);
+
 
 void pass_by_value(int num) {
 	num = 100;
@@ -42,11 +45,29 @@ void pass_by_ref(int &num) {
 	num = 100;
 }
 
+void print_array(int num_array[], size_t size) {
+	for (size_t i{ 0 }; i < size; i++)
+	{
+		cout << num_array[i] << ", ";
+	}
+	cout << endl;
+}
+
+// NOTE: use etc, const int num_array[] - avoid changing the array
+void set_array_values_tozero(int num_array[], size_t size) {
+	for (size_t i{ 0 }; i < size; i++)
+	{
+		num_array[i] = 0;
+	}
+}
+
 int main()
 {
     cout << "section 11 - functions:\n" << endl; 
 
 		int num{50};
+		int num_array[] {1,2,3,4,5,6};
+		int num_array_length = sizeof(num_array) / sizeof(num_array[0]);
 
 		// pass by value - should not change the ORG value
 		cout << "pass_by_value (BEFORE) num: "<< num << endl;
@@ -61,6 +82,14 @@ int main()
 		cout << "pass_by_ref (AFTER) num: " << num << endl;
 
 		cout << "\n" << endl;
+
+
+		//NOTE: array are not passed by value
+		print_array(num_array, num_array_length);
+		set_array_values_tozero(num_array, num_array_length);
+		print_array(num_array, num_array_length);
+
+
 
 
 }
