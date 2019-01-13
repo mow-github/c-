@@ -7,21 +7,23 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "first", "first\first.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reference", "Reference\Reference.vcxproj", "{662181BE-0C9C-48F4-9119-D7E1CB5C1637}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section2_lecture24_const", "section2_lecture24_const\section2_lecture24_const.vcxproj", "{5BA67FE5-671D-4A86-8B49-7689E7CD144E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section02_lecture24_const", "section2_lecture24_const\section2_lecture24_const.vcxproj", "{5BA67FE5-671D-4A86-8B49-7689E7CD144E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section7_60_vectors", "section7_60_vectors\section7_60_vectors.vcxproj", "{CE8C5D63-216D-4043-AB92-E707B86C5769}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section07_60_vectors", "section7_60_vectors\section7_60_vectors.vcxproj", "{CE8C5D63-216D-4043-AB92-E707B86C5769}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section8__66_operators", "section8__66_operators\section8__66_operators.vcxproj", "{FAF8D9ED-736C-471E-9BCF-42CC30B0A2D3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section08__66_operators", "section8__66_operators\section8__66_operators.vcxproj", "{FAF8D9ED-736C-471E-9BCF-42CC30B0A2D3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section9_89_sum_proudct_pairs", "section9_89_sum_proudct_pairs\section9_89_sum_proudct_pairs.vcxproj", "{25CDEF34-D69C-4B4F-AF0D-1B57DD4533E2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section09_89_sum_proudct_pairs", "section9_89_sum_proudct_pairs\section9_89_sum_proudct_pairs.vcxproj", "{25CDEF34-D69C-4B4F-AF0D-1B57DD4533E2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section9_90_challenge_menu_collection", "section9_90_challenge_menu_collection\section9_90_challenge_menu_collection.vcxproj", "{36ED74DB-4E4B-4A79-8F91-7921067A4A22}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section09_90_challenge_menu_collection", "section9_90_challenge_menu_collection\section9_90_challenge_menu_collection.vcxproj", "{36ED74DB-4E4B-4A79-8F91-7921067A4A22}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section10_96_strings", "section10_96_strings\section10_96_strings.vcxproj", "{D266FD83-2F94-4067-BEE0-0830818C75FD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section10_99_encrypt_decrypt_string", "section10_99_encrypt_decrypt_string\section10_99_encrypt_decrypt_string.vcxproj", "{5D61A1B4-6116-4BF1-9DA0-335296BF7D2E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section10_100_letter_pyramid", "section10_100_letter_pyramid\section10_100_letter_pyramid.vcxproj", "{D4F7AA1D-C653-4CE6-811C-9C26CE83852A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "section11_105", "section11_105\section11_105.vcxproj", "{36F451A6-63AA-4AB5-B212-D15F5A1AA222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,16 @@ Global
 		{D4F7AA1D-C653-4CE6-811C-9C26CE83852A}.Release|x64.Build.0 = Release|x64
 		{D4F7AA1D-C653-4CE6-811C-9C26CE83852A}.Release|x86.ActiveCfg = Release|Win32
 		{D4F7AA1D-C653-4CE6-811C-9C26CE83852A}.Release|x86.Build.0 = Release|Win32
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Debug|x64.ActiveCfg = Debug|x64
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Debug|x64.Build.0 = Debug|x64
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Debug|x86.ActiveCfg = Debug|Win32
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Debug|x86.Build.0 = Debug|Win32
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Release|Any CPU.ActiveCfg = Release|Win32
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Release|x64.ActiveCfg = Release|x64
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Release|x64.Build.0 = Release|x64
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Release|x86.ActiveCfg = Release|Win32
+		{36F451A6-63AA-4AB5-B212-D15F5A1AA222}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
