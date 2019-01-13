@@ -35,6 +35,9 @@ void pass_by_ref(int &num);
 
 void print_array(int num_array[]);
 void set_array_values_tozero(int num_array[]);
+unsigned long long factorial(unsigned long long n);
+unsigned long long fibonacci(unsigned long long n);
+
 
 
 void pass_by_value(int num) {
@@ -61,6 +64,19 @@ void set_array_values_tozero(int num_array[], size_t size) {
 	}
 }
 
+unsigned long long factorial(unsigned long long n) {
+	if (n == 0) {
+		return 1;
+	}
+	return n * factorial(n-1);
+}
+unsigned long long fibonacci(unsigned long long n) {
+	if (n <= 1) {
+		return n;
+	}
+	return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
 int main()
 {
     cout << "section 11 - functions:\n" << endl; 
@@ -84,11 +100,17 @@ int main()
 		cout << "\n" << endl;
 
 
-		//NOTE: array are not passed by value
 		print_array(num_array, num_array_length);
 		set_array_values_tozero(num_array, num_array_length);
 		print_array(num_array, num_array_length);
 
+		cout << "-------------------------------------------- \n" << endl;
+
+		//section 113: start recursion
+
+		cout << factorial(5) << endl;
+
+		cout << fibonacci(30) << endl;
 
 
 
