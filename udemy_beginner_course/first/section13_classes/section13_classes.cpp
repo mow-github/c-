@@ -132,11 +132,14 @@ void TestDeepCopyClass::setData(int nr) {
 
 class TestMoveCtorClass {
 private:
+	static int _counterObjects;
 	int *data;
 	string _name;
 public:
 	// CTOR 1arg
 	TestMoveCtorClass(int d) {
+		_counterObjects++;
+
 		data = new int;
 		*data = d;
 		std::cout << "-- ctor 1arg: \t\t" << d << endl;
@@ -155,8 +158,16 @@ public:
 	//	std::cout << "-- MOVE ctor 1arg: " << *data << endl;
 	//};
 
+	static void get_counterObjects() {
+		cout << endl;
+		cout << "TestMoveCtorClass::get_counterObjects: " << _counterObjects << endl;
+		cout << endl;
+	}
 
 	~TestMoveCtorClass() {
+		_counterObjects--;
+
+
 		if (data != nullptr)
 		{
 			std::cout << "-- dtor freeing data: \t" << *data << endl;
@@ -175,6 +186,8 @@ public:
 	}
 };
 
+//Note: init static counter here to 0.
+int TestMoveCtorClass::_counterObjects{0};
 
 int main()
 {
@@ -261,7 +274,10 @@ int main()
 		vec.push_back(TestMoveCtorClass{10});
 		vec.push_back(TestMoveCtorClass{20});
 
-
+		// --------------------------- use static counter and output x TestMoveCtorClass objects
+		// Note: get_counterObjects should be 0 when we leave this scope.
+		TestMoveCtorClass::get_counterObjects();
+		// ---------------------------
 
 		std::cout << "\n MOVE constructor: END \n" << endl;
 		std::cout << "\n ---------------------------------------------------------------------- \n" << endl;
